@@ -1,0 +1,52 @@
+C-o PREFIX (custom). Ie. all commands start with this. Be default it is C-b
+
+Prefix is shortened for ^o below
+
+ GENERAL
+----------
+^o ?                          See keybindings (press q to exit)
+^o : <name>                   Run function by name
+
+
+ PANES
+---------
+
+^o <arrow up|down|left|right>  Move to a neighbour pane
+^o o                           Move to next pane
+
+^o "                           Split pane horizontally
+^o %                           Split pane vertically
+
+^o q                           Show pane numbers
+
+^o x                           kill current pane
+
+^o {                           Move the current pane left
+^o }                           Move the current pane right
+
+^ C-o                          Rotate window ‘up’ (i.e. move all panes)
+^ M-o                          Rotate window ‘down’
+
+
+ WINDOWS
+-------------
+^o w                           List windows
+^o c                           Create new window
+^o &                           Kill window
+^o #                           Move to window number # (Eg. ^o 1 moves to second windows. 0 is the first)
+
+^o ,                           Rename window
+^o : rename-window
+
+^o z                           Make current pane full-screen (and back)
+
+
+ SESSIONS
+-------------
+
+^o s                           List sessions
+^o d                           Detach active session
+tmux new -s <session_name>     Creates a new session with given name (instead of sequence number)
+
+^o $                           Rename session
+^o : rename-session

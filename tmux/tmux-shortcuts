@@ -11,7 +11,7 @@ Prefix is shortened for ^o below
  PANES
 ---------
 
-^o <arrow up|down|left|right>  Move to a neighbour pane
+^o <up|down|left|right>        Move to a neighbour pane
 ^o o                           Move to next pane
 
 ^o "                           Split pane horizontally
@@ -27,6 +27,7 @@ Prefix is shortened for ^o below
 ^ C-o                          Rotate window ‘up’ (i.e. move all panes)
 ^ M-o                          Rotate window ‘down’
 
+^o ^-<up|down|left|right>      Eg. to move border left: C-o C-<left>
 
  WINDOWS
 -------------
